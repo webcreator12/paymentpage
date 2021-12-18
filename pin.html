@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/fe58eb2cfd.js" crossorigin="anonymous"></script>
+    <title>PIN</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-arrow-left" onclick="functionhistoryback()"></i>
+            <h2>Input PIN</h2>
+        </div>
+        <form action="">
+            <div class="pin">
+                <input type="text" id="1" maxlength="1" onkeyup="moveonMax('1', this,'a')">
+                <input type="text" id="a" maxlength="1" onkeyup="moveonMax('a', this,'b')">
+                <input type="text" id="b" maxlength="1" onkeyup="moveonMax('b', this,'c')">
+                <input type="text" id="c" maxlength="1" onkeyup="moveonMax('c', this,'d')">
+                <input type="text" id="d" maxlength="1" onkeyup="moveonMax('d', this,'e')">
+                <input type="text" id="e" maxlength="1" onkeyup="myfunction()">
+            </div>
+            <a href="" class="link">Forgot PIN</a>
+            <div class="keyboard">
+                <input type="button" value="1" onclick="insert(1)">
+                <input type="button" value="2" onclick="insert(2)">
+                <input type="button" value="3" onclick="insert(3)">
+                <input type="button" value="4" onclick="insert(4)">
+                <input type="button" value="5" onclick="insert(5)">
+                <input type="button" value="6" onclick="insert(6)">
+                <input type="button" value="7" onclick="insert(7)">
+                <input type="button" value="8" onclick="insert(8)">
+                <input type="button" value="9" onclick="insert(9)">
+                <input type="button" value=""  onclick="" id="unhover">
+                <input type="button" value="0" onclick="insert(0)">
+                <input type="button" value="x" onclick="gotowebsite()" id="change">
+            </div>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
